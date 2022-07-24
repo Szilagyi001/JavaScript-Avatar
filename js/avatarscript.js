@@ -18,3 +18,15 @@ function displayavatar() {
     //Display the avatar
     avatar.innerHTML = `<img src="images/${avatars[rand]}">`;
 }
+
+//Hide  GenButton
+let btnSet = document.getElementById(`btnSet`);
+btnSet.addEventListener(`click` , hidebutton);
+function hidebutton() {
+    btnGen.style.display = "none";
+}
+//Change text on Set
+btnSet.addEventListener(`click` , changeText);
+function changeText() {
+    btnSet.textContent = `AVATAR HAS BEEN SET`;
+}
